@@ -1,0 +1,21 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+        body{
+          background-color: aliceblue;
+          padding: 27px;
+          font-size: 21px;
+          text-align: center;
+        }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('partials/nav.ejs') %>
+    <h1>The Name is <%= person %></h1>
+    <h1>The Age is <%= data.age %></h1>
+    <h1>The Job is <%= data.job %></h1>
+  </body>
+</html>

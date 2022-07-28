@@ -1,0 +1,31 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+        body{
+          background-color: aliceblue;
+          padding: 27px;
+          font-size: 21px;
+          text-align: center;
+        }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('partials/nav.ejs') %>
+    <h1>This is The About Page</h1>
+    <form action="/about" method="POST">
+      <label for="who">Name</label>
+      <input type="text" name="name" id="who" value='<%= qs.name %>' />
+
+      <label for="job">Job</label>
+      <input type="text" name="job" id="job" value='<%= qs.job %>' />
+
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email" />
+
+      <button type='submit'>Submit</button>
+    </form>
+  </body>
+</html>
